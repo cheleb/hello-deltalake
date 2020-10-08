@@ -1,7 +1,10 @@
 
+
+name:= "hello-deltalake"
+scalaVersion := "2.12.12"
 scalafmtOnCompile := true
 
-libraryDependencies += "org.apache.spark" % "spark-sql_2.12" % "2.4.4"
-libraryDependencies += "org.apache.spark" % "spark-streaming_2.12" % "2.4.4"
-libraryDependencies += "io.delta" %% "delta-core" % "0.4.0"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.0.1"
+libraryDependencies += "org.apache.spark" %% "spark-streaming" % "3.0.1"
+libraryDependencies += "io.delta" %% "delta-core" % "0.7.0"
 
