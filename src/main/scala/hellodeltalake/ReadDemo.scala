@@ -1,13 +1,32 @@
 package hellodeltalake
 
-import org.apache.spark.sql.SparkSession
+import zio._
+
 
 object ReadDemo1 extends App {
-  val spark = SparkSession.builder
-    .appName("Demo1")
-    .master("local[4]")
-    .getOrCreate()
 
-  val df = spark.read.format("delta").load("/tmp/delta-table")
-  df.show()
+  private val table = "/tmp/delta-table"
+
+  val program: ZIO[SparkModule.SparkModule, Nothing, Unit] = ???
+
+  override def run(args: List[String]): URIO[ZEnv,ExitCode] = 
+   program
+   .provideLayer(SparkModule.layer).exitCode
+
+  
+/*  
+
+for {
+    spark <- SparkModule()
+    _ <-      ZIO.effect{
+      val df = spark.read.format("delta").load(table)
+      df.show()
+    }
+val data = spark.range(5, 10)
+  data.write
+    .format("delta")
+    .mode("append")
+    .save(table)
+*/
+  
 }
