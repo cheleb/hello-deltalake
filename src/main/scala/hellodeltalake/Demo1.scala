@@ -8,7 +8,7 @@ object Demo1 extends App {
     .master("local[4]")
     .getOrCreate()
 
-  val data = spark.range(0, 5)
+  val data = spark.range(0, 50000)
 
   data.write.format("delta").save("/tmp/delta-table")
 }

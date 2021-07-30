@@ -12,7 +12,8 @@
 
     <logger name="org.apache.spark.util" level="ERROR" />
     <logger name="org.apache.hadoop.util" level="ERROR" />
-
+    <logger name="org.apache" level="WARN" />
+    <logger name="org.apache.htrace.core.Tracer" level="WARN" />
     <root level="WARN">
         <appender-ref ref="STDOUT"/>
     </root>
