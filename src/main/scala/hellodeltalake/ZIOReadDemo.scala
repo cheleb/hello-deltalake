@@ -8,10 +8,10 @@ object ReadDemo1 extends App {
 
   val program: ZIO[SparkModule.SparkModule, Nothing, Unit] = ???
 
-  override def run(args: List[String]): URIO[ZEnv, ExitCode] =
-    program
-      .provideLayer(SparkModule.layer)
-      .exitCode
+  override def run(args: List[String]): URIO[ZEnv, ExitCode] = ???
+  // program
+  //   .provideLayer(SparkModule.layer)
+  //   .exitCode
 
   /*
 

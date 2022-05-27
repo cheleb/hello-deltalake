@@ -20,7 +20,7 @@ object SparkModule {
       .getOrCreate()
   }
 
-  def layer: ZLayer[ZEnv, Nothing, SparkModule] = ZLayer.fromServiceM { _ =>
-    ZIO.succeed(Test)
-  }
+  // def layer: ZLayer[ZEnv, Nothing, SparkModule] = ZLayer.fromServiceM { _ =>
+  //   ZIO.succeed(Test)
+  // }
 }
