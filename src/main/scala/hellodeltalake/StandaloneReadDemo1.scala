@@ -9,19 +9,18 @@ import io.delta.standalone.expressions.Literal
 
 import scala.jdk.CollectionConverters._
 
-object ReadStandalone extends App {
+object StandaloneReadDemo1 extends App {
 
   val log = DeltaLog.forTable(new Configuration(), "/tmp/delta-table");
   val snapshot = log.snapshot()
 
   val it = snapshot.open()
 
- val sum = it.asScala.foldLeft(0l){
-    case (acc, record) => acc + record.getLong("id")
+  val sum = it.asScala.foldLeft(0L) { case (acc, record) =>
+    acc + record.getLong("id")
   }
 
   println(sum)
-
 
   /*
   val latestSnapshot = log.update();
@@ -52,5 +51,5 @@ object ReadStandalone extends App {
 
     // Zappy engine to handle reading data in `addFile.getPath()` and apply any `scan.getResidualPredicate()`
   } finally iter.close();
-  */
+   */
 }

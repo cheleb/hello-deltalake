@@ -3,7 +3,7 @@ package hellodeltalake
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.Row
 
-object ReadDemo extends App {
+object SparkReadDemo1 extends App {
   val spark = SparkSession.builder
     .appName("Demo1")
     .master("local[4]")
