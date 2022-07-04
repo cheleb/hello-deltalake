@@ -5,9 +5,6 @@ import zio._
 import org.apache.spark.sql.SparkSession
 
 object SparkModule {
-  type SparkModule = Has[SparkModule.Service]
-
-  def apply(): ZIO[SparkModule, Throwable, SparkSession] = ZIO.access[SparkModule](_.get.spark)
 
   trait Service {
     def spark: SparkSession

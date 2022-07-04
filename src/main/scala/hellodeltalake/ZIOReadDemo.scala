@@ -2,13 +2,12 @@ package hellodeltalake
 
 import zio._
 
-object ReadDemo1 extends App {
+object ReadDemo1 extends ZIOAppDefault {
+
+  override def run: ZIO[Environment with ZIOAppArgs with Scope, Any, Any] = ???
 
   private val table = "/tmp/delta-table"
 
-  val program: ZIO[SparkModule.SparkModule, Nothing, Unit] = ???
-
-  override def run(args: List[String]): URIO[ZEnv, ExitCode] = ???
   // program
   //   .provideLayer(SparkModule.layer)
   //   .exitCode
