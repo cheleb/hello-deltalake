@@ -4,7 +4,10 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.Row
 
 object SparkReadDemo1 extends App {
-  val spark = SparkSession.builder
+  val spark = SparkSession
+    .builder()
+    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
+    .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
     .appName("Demo1")
     .master("local[4]")
     .getOrCreate()
