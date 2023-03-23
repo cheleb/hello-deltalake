@@ -9,7 +9,7 @@ libraryDependencies ++= Seq("spark-sql", "spark-streaming").map(d =>
 libraryDependencies += "io.delta" %% "delta-core" % "2.2.0"
 libraryDependencies += "io.delta" %% "delta-standalone" % "0.6.0"
 libraryDependencies += "com.google.guava" % "guava" % "31.1-jre"
-libraryDependencies += "dev.zio" %% "zio" % "2.0.9"
+libraryDependencies += "dev.zio" %% "zio" % "2.0.10"
 //libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.11"
 //libraryDependencies += "org.slf4j" % "log4j-over-slf4j" % "1.7.36"
 
