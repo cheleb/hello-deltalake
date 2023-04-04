@@ -6,7 +6,7 @@ libraryDependencies ++= Seq("spark-sql", "spark-streaming").map(d =>
   "org.apache.spark" %% d % "3.3.1" exclude ("org.slf4j", "slf4j-log4j12")
 )
 
-libraryDependencies += "io.delta" %% "delta-core" % "2.2.0"
+libraryDependencies += "io.delta" %% "delta-core" % "2.3.0"
 libraryDependencies += "io.delta" %% "delta-standalone" % "0.6.0"
 libraryDependencies += "com.google.guava" % "guava" % "31.1-jre"
 libraryDependencies += "dev.zio" %% "zio" % "2.0.10"
