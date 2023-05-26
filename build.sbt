@@ -3,7 +3,7 @@ scalaVersion := "2.13.10"
 scalafmtOnCompile := true
 
 libraryDependencies ++= Seq("spark-sql", "spark-streaming").map(d =>
-  "org.apache.spark" %% d % "3.3.1" exclude ("org.slf4j", "slf4j-log4j12")
+  "org.apache.spark" %% d % "3.4.0" exclude ("org.slf4j", "slf4j-log4j12")
 )
 
 libraryDependencies += "io.delta" %% "delta-core" % "2.4.0"
