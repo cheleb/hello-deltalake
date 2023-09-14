@@ -1,5 +1,5 @@
 name := "hello-deltalake"
-scalaVersion := "2.13.11"
+scalaVersion := "2.13.12"
 scalafmtOnCompile := true
 
 libraryDependencies ++= Seq("spark-sql", "spark-streaming").map(d =>
