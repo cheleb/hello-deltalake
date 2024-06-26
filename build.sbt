@@ -23,7 +23,7 @@ libraryDependencies ++= Seq("spark-sql", "spark-streaming").map(d =>
 
 libraryDependencies += "io.delta" %% "delta-core" % "2.4.0"
 libraryDependencies += "io.delta" %% "delta-standalone" % "0.6.0"
-libraryDependencies += "com.google.guava" % "guava" % "33.0.0-android"
+libraryDependencies += "com.google.guava" % "guava" % "33.2.1-android"
 libraryDependencies += "dev.zio" %% "zio" % "2.0.13"
 //libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.11"
 //libraryDependencies += "org.slf4j" % "log4j-over-slf4j" % "1.7.36"
@@ -33,9 +33,9 @@ val scala3Test = (project in file("scala3-test"))
   .settings(
     name := "scala3-test",
     scalaVersion := "3.3.1",
-    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.1.2",
-    libraryDependencies += "org.apache.hadoop" % "hadoop-mapreduce-client-core" % "3.2.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.4.0",
+    libraryDependencies += "org.apache.hadoop" % "hadoop-mapreduce-client-core" % "3.4.0",
     libraryDependencies += "io.delta" % "delta-core_2.13" % "2.4.0",
-    libraryDependencies += "io.delta" % "delta-standalone_2.13" % "3.0.0",
-    libraryDependencies += "org.xerial.snappy" % "snappy-java" % "1.1.8.4"
+    libraryDependencies += "io.delta" % "delta-standalone_2.13" % "3.2.0",
+    libraryDependencies += "org.xerial.snappy" % "snappy-java" % "1.1.8"
   )
