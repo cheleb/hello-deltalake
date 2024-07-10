@@ -37,5 +37,5 @@ val scala3Test = (project in file("scala3-test"))
     libraryDependencies += "org.apache.hadoop" % "hadoop-mapreduce-client-core" % "3.4.0",
     libraryDependencies += "io.delta" % "delta-core_2.13" % "2.4.0",
     libraryDependencies += "io.delta" % "delta-standalone_2.13" % "3.2.0",
-    libraryDependencies += "org.xerial.snappy" % "snappy-java" % "1.1.8"
+    libraryDependencies += "org.xerial.snappy" % "snappy-java" % "1.1.10.5"
   )
