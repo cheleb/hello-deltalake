@@ -1,5 +1,5 @@
 name := "hello-deltalake"
-scalaVersion := "2.13.14"
+scalaVersion := "2.13.15"
 scalafmtOnCompile := true
 
 inThisBuild(
