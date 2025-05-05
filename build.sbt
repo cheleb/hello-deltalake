@@ -32,7 +32,7 @@ libraryDependencies += "dev.zio" %% "zio" % "2.1.17"
 val scala3Test = (project in file("scala3-test"))
   .settings(
     name := "scala3-test",
-    scalaVersion := "3.6.4",
+    scalaVersion := "3.7.0",
     libraryDependencies += "org.apache.hadoop" % "hadoop-common" % "3.4.1",
     libraryDependencies += "org.apache.hadoop" % "hadoop-mapreduce-client-core" % "3.4.1",
     libraryDependencies += "io.delta" % "delta-core_2.13" % "2.4.0",
